@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+
+# IDEs and editors (since you are using WebStorm)
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
