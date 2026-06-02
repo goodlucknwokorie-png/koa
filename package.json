@@ -2,20 +2,26 @@
   "name": "koa",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.ts",
   "scripts": {
+    "dev": "tsx watch src/app.ts",
     "test": "jest --runInBand --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/router": "^15.6.0",
     "koa": "^3.2.1"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
+    "@types/koa": "^3.0.3",
+    "@types/supertest": "^7.2.0",
     "jest": "^30.4.2",
     "supertest": "^7.2.2",
-    "ts-jest": "^29.4.11"
+    "ts-jest": "^29.4.11",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   }
 }
