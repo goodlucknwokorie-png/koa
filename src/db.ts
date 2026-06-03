@@ -1,5 +1,5 @@
-import 'dotenv/config';
-import { Pool, QueryResult } from 'pg';
+import "dotenv/config";
+import { Pool, QueryResult } from "pg";
 
 const pool = new Pool({
   user: process.env.PG_USER,
@@ -8,17 +8,20 @@ const pool = new Pool({
   port: 25060,
   database: process.env.DB_NAME,
   ssl: {
-    rejectUnauthorized: false
-  }
+    rejectUnauthorized: false,
+  },
 });
 
-export const query = async (text: string, params?: any[]): Promise<QueryResult> => {
+export const query = async (
+  text: string,
+  params?: any[],
+): Promise<QueryResult> => {
   try {
     const res = await pool.query(text, params);
 
     return res;
   } catch (error) {
-    console.error('Database query error:', error);
+    console.error("Database query error:", error);
 
     throw error;
   }
