@@ -12,12 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "@koa/router": "^15.6.0",
-    "koa": "^3.2.1"
+    "koa": "^3.2.1",
+    "pg": "^8.21.0"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/koa": "^3.0.3",
+    "@types/pg": "^8.20.0",
     "@types/supertest": "^7.2.0",
+    "dotenv": "^17.4.2",
     "jest": "^30.4.2",
     "supertest": "^7.2.2",
     "ts-jest": "^29.4.11",
