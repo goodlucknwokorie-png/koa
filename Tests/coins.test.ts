@@ -17,7 +17,7 @@ test("GET /coins returns a list of coins from the database", async () => {
     const sampleCoin = response.body[0];
 
     expect(sampleCoin).toHaveProperty("id");
-    expect(sampleCoin.id).toBe("1");
+    expect(sampleCoin.id).toBe(1);
 
     expect(sampleCoin).toHaveProperty("name");
     expect(sampleCoin.name).toBe("Assemble");
